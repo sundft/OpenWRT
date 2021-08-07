@@ -32,3 +32,6 @@ echo \"# IPTV\" >> /etc/dnsmasq.conf\
 echo \"dhcp-option-force=125,00:00:00:00:14:02:06:48:47:57:2D:43:54:0A:02:20:00:0B:02:00:55:0D:02:00:2E\" >> /etc/dnsmasq.conf\
 echo \"dhcp-option=15\" >> /etc/dnsmasq.conf\
 echo \"dhcp-option=28\" >> /etc/dnsmasq.conf' package/lean/default-settings/files/zzz-default-settings
+
+rm -rf package/lean/luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
