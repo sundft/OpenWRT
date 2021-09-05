@@ -14,8 +14,8 @@ sed -i 's/root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::/root:$1$lDRVkTL
 
 #sed -i 's/echo '"'"'iptables/echo '"'"'# iptables/g' package/lean/default-settings/files/zzz-default-settings
 #sed -i 's/echo '"'"'\[ -n/echo '"'"'# \[ -n/g' package/lean/default-settings/files/zzz-default-settings
-#sed -i '/iptables -t nat -A PREROUTING -p/d' package/lean/default-settings/files/zzz-default-settings
-#sed -i '/ip6tables -t nat -A PREROUTING -p/d' package/lean/default-settings/files/zzz-default-settings
+sed -i '/iptables -t nat -A PREROUTING -p/d' package/lean/default-settings/files/zzz-default-settings
+sed -i '/ip6tables -t nat -A PREROUTING -p/d' package/lean/default-settings/files/zzz-default-settings
 
 sed -i '/uci commit fstab/a\
 \
